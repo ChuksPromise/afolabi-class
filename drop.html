@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <style>
+         .dropdown{
+            background: gold;
+            width: fit-content;
+            padding: 10px;
+         }
+         .dropdown ul{
+            background: red;
+            padding: 10px;
+            list-style-type: none;
+            text-align: center;
+            position: absolute;
+            margin: 0px;
+         }
+         .dropdown li{
+            
+            margin: 5px;
+            padding: 10px;
+         }
+         .dropdown li:hover{
+            background: blue;
+            color: white
+         }
+         .dropdown ul{
+            display: none;
+         }
+         .dropdown:hover ul{
+            display: block;
+         }
+        
+
+         @keyframes movet{
+            
+            0%{
+               margin-top: 0px;
+               margin-left: 0px;
+               background: green;
+               border-radius: 0px;
+            }
+            25%{
+               margin-top: 0px;
+               margin-left: 200px;
+               background: gold;
+               border-radius: 100%;
+            }
+            50%{
+               margin-top: 200px;
+               margin-left: 200px;
+            }
+            75%{
+               margin-top: 200px;
+               margin-left: 0px;
+            }
+            100%{
+               margin-top: 0px;
+               margin-left: 0px
+            }
+         }
+
+         utton{
+            padding: 20px;
+            /*background: linear-gradient(270deg, red, green, blue, purple, gold);*/
+            background: radial-gradient(circle,  red, green, blue, purple, gold);
+
+
+            -webkit-animation: moveit 1s ease-in-out 0s infinite forwards;
+            -moz-animation: moveit 1s ease-in-out 0s infinite forwards;
+            -o-animation: moveit 1s ease-in-out 0s infinite forwards;
+
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+            font-size: 60px;
+            /*
+               -webkit-animation
+               -moz-animation
+               -o-animation
+            */
+
+
+            /*transform: translate(0px, 200px);
+            transform: rotateY(180deg);
+            transform: scale(1);
+            transform: skewY(30deg);*/
+            
+
+         
+         }
+         button:hover{
+            background: gold;
+            padding:60px;
+            color: white;
+            
+         }
+
+         .kei{
+            background: red;
+            padding: 0px;
+            list-style-type: none;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            height: 300px;
+            justify-content: space-between;
+         }
+         .kei li{
+
+            height: 20px;
+            background: blue;
+            margin: 5px;
+            width: fit-content;
+            padding: 10px;
+         }
+         .nono{
+            display: none;
+         }
+
+         @media screen and (max-width: 768px){
+            button{
+               background: red;
+            }
+            .kei{
+               flex-direction: column;
+               background: green;
+               justify-content: space-between;
+               align-items: center;
+            }
+            .nono{
+               display: inline;
+            }
+         }
+         
+      </style>
+   </head>
+   <body>
+      <div class="dropdown">
+         DROPITDOWN
+         <ul>
+            <li>home</li>
+            <li>aboout</li>
+            <li>service</li>
+            <li>contact</li>
+            <li>login</li>
+         </ul>
+      </div>
+      <p>
+         Lorem, ipsum dolor sit amet consectetur adipisici
+         ng elit. Ipsam repudiandae quaerat deserunt reici
+         endis provident soluta fuga, natus animi error do
+         lorem obcaecati praesentium exercitationem cumque 
+         aperiam recusandae veniam dolor sapiente numquam.
+      </p>
+
+      <button>
+          🏍
+      </button>
+      <p>
+         euwsdhu hhuawehu herrusdhuh uheuh uaehsduh uherduhu hufdhu 
+      hdufhu hudfhu hufdhuh ufhduh udfhuhu hudfhuh uhf
+      </p>
+      <ul class="kei">
+         <li>koko</li>
+         <li>koko</li>
+         <li>koko</li>
+         <li>koko</li>
+         <li>koko</li>
+         <li class="nono">
+            <button >
+               m
+            </button>
+         </li>
+      </ul>
+      
+   </body>
+</html>
